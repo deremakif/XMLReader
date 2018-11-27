@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "List";
+}
+@using XMLReader.Models;
+
+
+<h2> Display XML Data in WebPage </h2>
+
+<table class="table table-responsive table-bordered">
+    <thead style="background-color:Highlight">
+        <tr>
+            <th>Text: </th>
+            <th>Count: </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.text</td>
+                <td>@item.count</td>
+            </tr>
+        }
+    </tbody>
+</table> 
